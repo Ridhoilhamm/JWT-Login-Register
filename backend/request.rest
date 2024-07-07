@@ -1,0 +1,22 @@
+GET http://localhost:6000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJ1c2VyIDIiLCJlbWFpbCI6ImFrdW5AZ21haWwuY29tIiwiaWF0IjoxNzIwMzc1MDA4LCJleHAiOjE3MjAzNzUzMDh9.QXWEbjay3MKb50Gl9hAXdN4-MzVavRcPClrpir3MN1w
+
+###
+POST http://localhost:6000/users
+Content-Type: application/json
+
+{
+    "name":"user 2",
+    "email":"akun@gmail.com",
+    "password":"123",
+    "confPassword":"123"
+}
+
+###
+POST http://localhost:6000/login
+Content-Type: application/json
+
+{
+    "email":"akun@gmail.com",
+    "password":"123"
+}
